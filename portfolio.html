@@ -5,8 +5,55 @@
 <title> Savage Designs </title>
 <link href="css/style.css" rel="stylesheet" media="all"/>
 <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen"/>
+<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="js/lightbox.js"></script>
 </head>
 <body>
+
+<div id="container">
+  <div id="lightboxOverlay" class="lightboxOverlay" style="width: 722px; height: 5603px; display: none;"></div>
+<div id="lightbox" class="lightbox" style="display: block; top: 487px; left: 0px;">
+  <div class="lb-outerContainer" style="width: 585px; height: 585px;">
+    <div class="lb-container">
+      <img class="lb-image" src="images/superpower.jpg" style="display: block; width: 577px; height: 577px;">
+      <img class="lb-image" src="images/inside invite.jpg" style="display: block; width: 577px; height: 577px;">
+      <div class="lb-nav" style="display: block;">
+        <a class="lb-prev" href="" style="display: none;"></a>
+        <a class="lb-next" href="" style="display: none;"></a>
+      </div>
+      <div class="lb-loader" style="display: none; opacity: 0.393485;">
+        <a class="lb-cancel"></a>
+      </div>
+    </div>
+  </div>
+  <div class="lb-dataContainer" style="display: block; width: 585px;">
+    <div class="lb-data">
+      <div class="lb-details">
+        <span class="lb-caption" style="display: inline;">Optional caption.</span>
+        <span class="lb-number" style="display: none;">Image 4 of 4</span>
+      </div>
+      <div class="lb-closeContainer">
+        <a class="lb-close"></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+      $(function() {
+        $('#nav').on('click', '.nav-item', function(event) {
+          event.preventDefault();
+          var hash = this.hash;
+
+          $('html, body').animate({
+           scrollTop: $(hash).offset().top
+          }, 1000, function() {
+            window.location.hash = hash;
+          });
+        });
+      });
+
+    </script>
 </body>
 </html>
