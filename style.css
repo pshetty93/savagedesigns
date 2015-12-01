@@ -1,0 +1,57 @@
+
+* {margin:0px;padding:0px;}
+
+body {background-color: #e8e8e8;
+      font-family: alegreya_sanslight;
+      font-size:62.5%}
+
+#container {background-color :#ffffff;
+            width:960px;
+            margin:0px auto;
+            height:1000px;
+            position:relative;
+            }
+
+header img {margin-left: 221.5px;
+}
+
+#gallery img {margin-left: 110px;
+}
+a {text-decoration:none;
+        color:#000}
+@font-face {
+    font-family: 'alegreya_sanslight';
+    src: url('fonts/alegreyasans-light-webfont.eot');
+    src: url('fonts/alegreyasans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/alegreyasans-light-webfont.woff2') format('woff2'),
+         url('fonts/alegreyasans-light-webfont.woff') format('woff'),
+         url('fonts/alegreyasans-light-webfont.ttf') format('truetype'),
+         url('fonts/alegreyasans-light-webfont.svg#alegreya_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+nav#top {
+      margin-left: 200px;
+      }
+
+nav#top li {display:inline;
+         margin-left:50px;
+         margin-right:50px;
+         margin-top:20px;
+         font-size:1.8em;
+         }
+
+section#main {margin-top:120px;
+              margin-left:90px;}
+
+section#gallery {margin-top:20px;
+              margin-left:90px;}
+
+footer {position:absolute;
+         bottom:10px;
+         right:90px;
+         font-size:.8em;}
+
